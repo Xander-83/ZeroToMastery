@@ -92,11 +92,51 @@ function add (a,b) {
 const add = (a, b) => a + b;  // <--- New Way
 
 
+// ES7
+
+const pets = ['cat', 'dog', 'bird'];
+pets.includes[dog];
+//statement is true
+//Exponation
+const square = (x) => x**2;
+const cube = (y) => y**3;
 
 
+// ES8
+let obj = {
+	username: 'Wish',
+	username: 'Mashire',
+	username: 'Juvia'
+}
+
+Object.entries(obj).map(value=> {
+	return value[1] + value[0].replace('username', '');
+})
 
 
+// ES10
 
+const array = [1,[2,3],[4,5]]
+array.flat()
 
+//Advance Loops
+//Old style
+for ( let i = 0; i < basket.length; i++){
+	console.log(basket[i]);
+}
+basket.forEach(item => {
+	console.log(item);
+})
 
-
+// For of 
+// Iterating - arrays, strings
+const basket = ['Apple', 'Banana', 'Orange', ]
+for (item of basket) {
+	console.log(item);
+}
+// For In
+// Enumerating - objects
+const detailedBasket = {apples: 5, oranges: 10, grapes: 1000}
+for (item in detailedBasket){
+	console.log(item)
+}
